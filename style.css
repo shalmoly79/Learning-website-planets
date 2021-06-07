@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "RocknRoll One", sans-serif;
+}
+section {
+  height: 100vh;
+  overflow: hidden;
+}
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1.1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  mix-blend-mode: overlay;
+}
+.text {
+  position: relative;
+  z-index: 10;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text h2 {
+  display: grid;
+  place-items: center;
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1em;
+  color: whitesmoke;
+  letter-spacing: 0.5rem;
+  font-family: "RocknRoll One", sans-serif;
+}
+
+/* SWIPER */
+
+#sectiontwo {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(3, 3, 94);
+}
+
+.rockbg1 {
+  position: absolute;
+  transform: scale(0.2);
+  filter: brightness(0.2);
+  top: 20vh;
+  left: 0;
+  z-index: 1;
+}
+
+.planet-links {
+  width: 95%;
+  height: 5vh;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.planet-links .swiper-pagination-bullet {
+  opacity: 0.2;
+  outline: none;
+}
+.planet-links .swiper-pagination-bullet-active {
+  color: #fff;
+  opacity: 1;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: transparent;
+}
+
+.swiper-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px 0;
+}
+
+.swiper-wrapper {
+  transition-delay: 0.5s;
+}
+
+.swiper-slide {
+  height: 400px !important;
+  width: 90% !important;
+  background: transparent;
+}
+
+.swiper-slide:nth-child(1) .slide-img {
+  background-image: url("mercury.png");
+}
+.swiper-slide:nth-child(2) .slide-img {
+  background-image: url("venus.png");
+}
+.swiper-slide:nth-child(3) .slide-img {
+  background-image: url("earth1.png");
+}
+.swiper-slide:nth-child(4) .slide-img {
+  background-image: url("mars.png");
+}
+.swiper-slide:nth-child(5) .slide-img {
+  background-image: url("jupiter.png");
+}
+.swiper-slide:nth-child(6) .slide-img {
+  background-image: url("uranus.png");
+}
+.swiper-slide:nth-child(7) .slide-img {
+  background-image: url("uranuss.png");
+}
+.swiper-slide:nth-child(8) .slide-img {
+  background-image: url("neptune.png");
+}
+
+.slide-img {
+  background-position: "center";
+  background-repeat: no-repeat !important;
+  background-size: contain;
+  width: 30%;
+  height: 100%;
+}
+
+.slide-number {
+  position: absolute;
+  top: -10px;
+  left: 30%;
+  width: 200px;
+  height: 120px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.slide-number p {
+  font-size: 40px;
+  font-family: "AlphaCentauri" !important;
+  color: #fff;
+  position: relative;
+}
+
+.slide-number p span {
+  position: absolute;
+}
+
+.slide-detail {
+  position: absolute;
+  top: 130px;
+  left: 30%;
+  z-index: 10;
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slide-detail p {
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  opacity: 0.8;
+  line-height: 30px;
+}
+
+.slide-detail p span {
+  position: absolute;
+}
+
+.slide-detail-facts {
+  position: absolute;
+  top: 260px;
+  left: 30%;
+  z-index: 10;
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+  color: #fff;
+  font-size: 1.3em;
+}
+.slide-detail-facts div {
+  display: flex;
+  position: relative;
+}
+.slide-detail-facts div h5 {
+  margin-right: 20px;
+}
+
+.slide-text {
+  position: absolute;
+  top: -150px;
+  left: 22%;
+  z-index: 9;
+  width: 200px;
+  height: 400px;
+  overflow: hidden;
+  opacity: 0.1 !important;
+}
+
+.slide-text h4 {
+  color: #fff;
+  font-size: 100px;
+  position: relative;
+}
+.slide-text h4 span {
+  position: absolute;
+}
+
+.btn {
+  height: 760px;
+  position: relative;
+  /* border: 3px solid transparent; */
+  /* background-color: rgb(5, 146, 99); */
+  background: url(bg1.png);
+}
+
+h2 {
+  text-align: center;
+  padding: 250px 0;
+  font-size: 4rem;
+  font-weight: 300;
+}
+button {
+  width: 10%;
+  height: 5%;
+  border-radius: 1rem;
+}
+button:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+.btnq {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btnq a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+footer {
+  background: rgb(3, 3, 94);
+
+  width: 98.9vw;
+  color: #fff;
+  padding-top: 40px;
+}
+.footer-bottom {
+  width: 98.9vw;
+  text-align: center;
+  padding: 10px 0;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span {
+  opacity: 0.6;
+  font-weight: 300;
+}
